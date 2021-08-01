@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Certidão de Batismo</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            body{
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            header{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            #logo{
+                width: 16rem;
+            }
+
+            #textmain{
+                text-align: justify;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+            }
+
+            #textmain span{
+                font-weight: bold;
+            }
+
+            main{
+                margin-top: 2rem;
+                width: 70%;
+                font-size: .8rem;
+                text-align: left;
+            }
+
+            #inputs{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nd input{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .ld input{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .pmpco{
+                margin-bottom: 2rem;
+            }
+
+            .pmpco input{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            footer{
+                text-align: center;
+            }
+
+            .input{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(128, 128, 128, 0.548);
+                padding: .3rem;
+                font-size: .7rem;
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://imgur.com/xxvfFKu.png" id="logo">
+            <p>Rua Francisco Alves de Oliveira nº 114 - Centro</p>
+            <p>São Roque de Minas - MG | CEP 37928-00</p>
+            <p>Fone (37) 9 9867-9078</p>
+        </header>
+
+
+        <center><main>
+            <p id="textmain">Certificamos que revendo os livros de batizados da Paróquia São Roque de Minas - MG foi encontrado no LIVRO <span><%= livro %></span> FLS <span><%= folha %></span> Nº <span><%= termo %></span> o registro com os seguintes dados:</p>
+
+            <div id="inputs">
+                <div class="nd">
+                    <label for="name">NOME:</label>
+                    <div class="input">
+                        <%= nome %>
+                    </div>
+
+                    <label for="date">DATA DO BATISMO:</label>
+                    <div class="input">
+                        <%= data %>
+                    </div>
+                </div>
+
+                <div class="ld">
+                    <label for="local">LOCAL: </label>
+                    <div class="input">
+                        <%= local %>
+                    </div>
+
+                    <label for="nasc">DATA DE NASCIMENTO: </label>
+                    <div class="input">
+                        <%= nasc %>
+                    </div>
+                </div>
+
+                <div class="pmpco">
+                    <label for="pai">PAI: </label>
+                    <div class="input">
+                        <%= pai %>
+                    </div>
+
+                    <label for="mae">MÃE: </label>
+                    <div class="input">
+                        <%= mae %>
+                    </div>
+
+                    <label for="padrinho">PADRINHOS: </label>
+                    <div class="input">
+                        <%= padrinhos %>
+                    </div>
+
+                    <label for="celeb">CELEBRANTE: </label>
+                    <div class="input">
+                        <%= celeb %>
+                    </div>
+
+                    <label for="obs">OBSERVAÇÕES: </label>
+                    <div class="input">
+                        <%= obs %>
+                    </div>
+                </div>
+
+                <footer>
+                    <p>São Roque de Minas - MG, <span><%= nowdata %></span>.</p>
+                    <br/>
+                    <hr>
+                    <p>Pároco</p>
+                </footer>
+            </div>
+        </main></center>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "certbatismo",
+  "version": "1.0.0",
+  "description": "Gerador de certidões de batismo",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvaroeduardo/certBatismo.git"
+  },
+  "author": "Álvaro Eduardo Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvaroeduardo/certBatismo/issues"
+  },
+  "homepage": "https://github.com/alvaroeduardo/certBatismo#readme",
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-rebuild": "^2.3.5"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "electron-builder": "^22.11.7",
+    "html-pdf": "^3.0.1"
+  }
+}

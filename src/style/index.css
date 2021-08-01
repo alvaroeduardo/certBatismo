@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+header{
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+header h1{
+    font-size: 4rem;
+}
+
+header h2{
+    font-weight: normal;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+form label{
+    font-size: .7rem;
+}
+
+form input{
+    padding: .5rem;
+    border: 1.6px solid gray;
+    border-radius: 5px;
+    margin-bottom: .6rem;
+}
+
+form #observations{
+    margin-bottom: 1rem;
+}
